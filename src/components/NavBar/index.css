@@ -1,0 +1,28 @@
+.navbar-root-container {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-container{
+    background-color: green;
+    display: flex;
+    padding: 1%;
+  }
+.navigation-buttons-container{
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+    width: 50%;
+    background-color: yellow;
+    justify-content: center;
+  }
+.navigationButton{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    height: 50%;
+}

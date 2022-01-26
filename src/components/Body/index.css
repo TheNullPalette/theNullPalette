@@ -1,0 +1,10 @@
+.body-root-container{
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+.body-top-container{
+    background-color: blue;
+    
+}

@@ -19,7 +19,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
-article,
+/* article,
 aside,
 details,
 figcaption,
@@ -594,4 +594,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
+} */

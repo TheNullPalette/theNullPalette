@@ -4,11 +4,17 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Body from "../components/Body"
+import Testimonials from "../components/Testimonials"
+import Form from "../components/Form";
+import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
-    <h1>Under Construction</h1>
+    <Body />
+    <Testimonials />
+    <Form />
+    <Footer />
     {/* <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <StaticImage
