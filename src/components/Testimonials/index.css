@@ -1,0 +1,17 @@
+.sliding-window > * {
+    animation: slide 15s ease infinite 2s alternate;
+}
+
+.sliding-window > *:first-child {
+    margin-left: 50px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-900px);
+    }
+}
