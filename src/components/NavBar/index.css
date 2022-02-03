@@ -1,5 +1,5 @@
 .navbar-root-container {
-  position: fixed;
+  position: sticky;
   width: 100%;
   background-color: #fff;
   display: flex;

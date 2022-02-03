@@ -1,5 +1,6 @@
-import React from "react"
+import React, {useEffect, useRef} from "react"
 import "./index.css"
+import { useIntersection } from '../../providers/IntersectionProvider';
 
 const Card = () => {
   return (
@@ -11,9 +12,15 @@ const Card = () => {
 
 export default function Testimonials() {
   const totalCards = 12
-
+  const containerRef = useRef(null)
+  const { registerObserver } = useIntersection()
+  
+  useEffect(() => {
+    registerObserver(containerRef.current, (e, r)=>console.log("test", e,r))
+  }, [])
+    
   return (
-    <div style={{ backgroundColor: "pink", padding: "5%" }}>
+    <div style={{ backgroundColor: "pink", padding: "5%" }} ref={containerRef}>
       <h1
         style={{ fontFamily: "Lobster, serif" }}
         className="text-5xl text-center mb-10"

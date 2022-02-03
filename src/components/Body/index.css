@@ -1,8 +1,9 @@
 .body-root-container{
-    background-color: brown;
+    background-color: yellow;
     display: flex;
     flex-direction: column;
     padding: 1%;
+    min-height: 100vh;
 }
 .body-top-container{
     background-color: blue;
