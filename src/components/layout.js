@@ -1,58 +1,17 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
+import React from "react";
 
-import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import Navbar from "./NavBar";
 
-import NavBar from "./NavBar"
-import Body from "./Body"
-import "./layout.css"
-
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+export default function Layout({ children, navAnimate }) {
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-      <NavBar />
-      {/* <Body /> */}
-      <div
-        style={{
-          backgroundColor: "yellowgreen",
-        }}
-      >
-        <main>{children}</main>
-        {/* <footer
-          style={{
-            marginTop: '2rem',
-            padding: '1%',
-          }}
-        >
-          <h2>Footer</h2>
-          © {new Date().getFullYear()}, Built for
-          {` `}
-          <a href="#">Null Palette</a>
-        </footer> */}
-      </div>
+      <Navbar navAnimate={navAnimate} />
+      
+      <main>
+        {children}
+      </main>
+
+      {/* <footer>Footer</footer> */}
     </>
-  )
+  );
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
