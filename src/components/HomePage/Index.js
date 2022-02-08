@@ -17,8 +17,8 @@ function Index({ setNavAnimate }) {
   useEffect(() => {
     if (setNavAnimate) {
       registerObserver(node.current, state => {
-        console.log(state, state.intersectionRatio === 1)
-        if (state.intersectionRatio == 1 && state.isIntersecting) {
+        //console.log(state, state.intersectionRatio === 1)
+        if (state.intersectionRatio === 1 && state.isIntersecting) {
           animateNav(false)
         } else {
           animateNav(true)

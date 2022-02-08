@@ -5,6 +5,7 @@ import "../styles/globalStyles.scss"
 
 import Layout from "../components/Layout"
 import HomePage from "../components/HomePage"
+import Skills from "../components/SkillsSection";
 
 // import Seo from "../components/seo"
 // import Body from "../components/Body"
@@ -18,7 +19,7 @@ const IndexPage = () => {
   return (
     <Layout navAnimate={navAnimate}>
       <HomePage setNavAnimate={setNavAnimate} />
-      <HomePage />
+      <Skills />
     </Layout>
   )
 }

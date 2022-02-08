@@ -1,0 +1,17 @@
+.skill {
+  .card-view {
+    position: sticky;
+    top: 10px;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    transform: skewY(8deg);
+
+    &.top {
+      top: 20px;
+      left: 0;
+    }
+
+    &.bottom {
+      transform: translateX(75%) skewY(8deg);
+    }
+  }
+}
